@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&lines=🤖+AI+Sales+Agent;Powered+by+LLaMA+%2B+RAG;24%2F7+Lead+Qualification+Bot;Telegram+%7C+Voice+%7C+Terminal" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&lines=AI%20Sales%20Agent;Powered%20by%20LLaMA%20and%20RAG;24/7%20Lead%20Qualification;Telegram,%20Voice,%20Terminal" alt="Typing SVG" />
 
 <br/>
 
