@@ -14,6 +14,11 @@ DB_PATH = os.getenv("DB_PATH", "sales.db")
 
 
 def create_database():
+    
+    # Ensure the directory exists before creating the DB file
+    db_dir = os.path.dirname(DB_PATH)
+    if db_dir:
+        os.makedirs(db_dir, exist_ok=True)
 
     connection = sqlite3.connect(DB_PATH)
 
