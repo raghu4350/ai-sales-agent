@@ -16,9 +16,20 @@ How to get Gmail App Password:
 import os
 import smtplib
 import ssl
+import socket
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from dotenv import load_dotenv
+
+# --- FIX FOR RAILWAY: Force IPv4 ---
+# Railway containers often fail with "Network is unreachable"
+# because Python tries to connect to Gmail via IPv6.
+old_getaddrinfo = socket.getaddrinfo
+def new_getaddrinfo(*args, **kwargs):
+    responses = old_getaddrinfo(*args, **kwargs)
+    return [response for response in responses if response[0] == socket.AF_INET]
+socket.getaddrinfo = new_getaddrinfo
+# -----------------------------------
 
 load_dotenv()
 
